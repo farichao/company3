@@ -1,18 +1,20 @@
+package PT3;
+
 class Perusahaan {
-    private final String namaPerusahaan;
+    private final String NAMA_PERUSAHAAN; 
 
     public Perusahaan(String namaPerusahaan) {
-        this.namaPerusahaan = namaPerusahaan;
+        this.NAMA_PERUSAHAAN = namaPerusahaan;
     }
 
     public String getNamaPerusahaan() {
-        return namaPerusahaan;
+        return NAMA_PERUSAHAAN;
     }
 }
 
 class Util {
     public static String formatRupiah(long amount) {
-        return "Rp" + String.format("%,d", amount).replace(",", ".");
+        return "Rp " + String.format("%,d", amount).replace(",", ".");
     }
 }
 
